@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LogBookProject</string>
+    <string name="simple_calculator">Simple Calculator</string>
+    <string name="image_slideshow">Image Slideshow</string>
+</resources>
