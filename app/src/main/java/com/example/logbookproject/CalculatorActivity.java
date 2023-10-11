@@ -19,6 +19,7 @@ public class CalculatorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
+        btnClear = findViewById(R.id.clearBtn);
         btnPlus = findViewById(R.id.btnPlus);
         btnMinus = findViewById(R.id.btnMinus);
         btnDivision = findViewById(R.id.btnDivision);
@@ -38,7 +39,7 @@ public class CalculatorActivity extends AppCompatActivity {
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                firstOperand = Integer.parseInt(txtResult.getText().toString());
             }
         });
         btnMinus.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +63,8 @@ public class CalculatorActivity extends AppCompatActivity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                txtResult.setText("");
+                flag=0;
 
             }
         });
@@ -69,73 +72,76 @@ public class CalculatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
             }
         });
         btnPlus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+
             }
         });
         btnZero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                txtResult.setText(btnZero.getText().toString());
 
             }
         });
         btnOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(flag==0){};
+                txtResult.setText(btnOne.getText().toString());
 
             }
         });
         btnTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnTwo.getText().toString());
             }
         });
         btnThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnThree.getText().toString());
             }
         });
         btnFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnFour.getText().toString());
             }
         });
         btnFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnFive.getText().toString());
             }
         });
         btnSix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnSix.getText().toString());
             }
         });
         btnSeven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnSeven.getText().toString());
             }
         });
         btnEight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnEight.getText().toString());
             }
         });
         btnNine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                txtResult.setText(btnNine.getText().toString());
             }
         });
 
